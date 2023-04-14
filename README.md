@@ -13,6 +13,8 @@ Once you are inside the project directory, run the application:
 ```scala
 sbt run
 ```
+
+Following that you can test steaming data via 
 ```scala
-following that you can test steaming data via curl by calling our usd_csd_short dataset
+curl by calling curl -d [POST data] https://<localhost>/download/stream/quotes 
 ```

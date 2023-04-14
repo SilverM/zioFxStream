@@ -14,7 +14,7 @@ Once you are inside the project directory, run the application:
 sbt run
 ```
 
-Following that you can test steaming data via 
+Following that you can test steaming data through terminal by entering 
 ```scala
-curl by calling curl -d [POST data] https://<localhost>/download/stream/quotes 
+curl -d [POST data] https://<localhost>/download/stream/quotes 
 ```

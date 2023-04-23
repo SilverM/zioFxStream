@@ -5,7 +5,7 @@ First, open the console and clone the project using `git` (or you can simply dow
 
 ```scala
 git clone https://github.com/SilverM/zioFxStream.git
-cd zio2
+cd zioFXStream
 ```
 
 Once you are inside the project directory, run the application:

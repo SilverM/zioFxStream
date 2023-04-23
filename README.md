@@ -16,5 +16,7 @@ sbt run
 
 Following that you can test steaming data through terminal by entering 
 ```scala
-curl -d [POST data] https://<localhost>/download/stream/quotes 
+Example currency download: curl -i http://<localhost>/download/stream
+Specific currency download (must be uploaded to resources folder): curl -i http://<localhost>/download/stream/specific/<file>
+Example: curl -i http://localhost:8080/download/stream/specific/usdcad_2012_2022_short.csv
 ```

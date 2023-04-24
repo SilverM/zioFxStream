@@ -1,0 +1,14 @@
+.bk-root .bk-btn-default {
+    color: black;
+    font-size:10pt;
+    background-color: #05b7ff;
+    border-color: #05b7ff;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 30px;
+}

@@ -30,7 +30,7 @@ def conversion(x):
 
 
 # api-endpoint
-URL = "https://api.polygon.io/v2/aggs/ticker/C:EURUSD/range/1/minute/2021-04-22/2022-04-22?adjusted=true&sort=asc&limit=50000&apiKey=3ctpdsqVwckSoHTDTlv4mB9drztufFjv"
+URL = "https://api.polygon.io/v2/aggs/ticker/C:EURUSD/range/1/minute/2021-04-22/2022-04-22?adjusted=true&sort=asc&limit=50000&apiKey=<apikey>"
   
 # sending get request and saving the response as response object
 r = requests.get(url = URL)
@@ -89,8 +89,8 @@ for i,v in zip(end_date_list,start_dates_list):
     URL = "https://api.polygon.io/v2/aggs/ticker/{}/range/1/minute/{}/{}?adjusted=true&sort=asc&limit=50000&apiKey={}".format(curr,s,e,api_key)
     url_list.append(URL)
 
-all_tickers = 'https://api.polygon.io/v2/snapshot/locale/global/markets/crypto/tickers?apiKey=3ctpdsqVwckSoHTDTlv4mB9drztufFjv'
-forex_tickers = 'https://api.polygon.io/v2/snapshot/locale/global/markets/forex/tickers?apiKey=3ctpdsqVwckSoHTDTlv4mB9drztufFjv'
+all_tickers = 'https://api.polygon.io/v2/snapshot/locale/global/markets/crypto/tickers?apiKey=<apikey>'
+forex_tickers = 'https://api.polygon.io/v2/snapshot/locale/global/markets/forex/tickers?apiKey=<apikey>'
 r = requests.get(url = all_tickers)
 data = r.json()  
 
